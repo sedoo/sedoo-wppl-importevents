@@ -1,0 +1,14 @@
+.sedoo-wppl-importevents-error{
+    background:red;
+}
+
+.sedoo-wppl-importevents-success {
+    background: green;
+}
+
+.sedoo-wppl-importevents-span {
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: .8em;
+}
