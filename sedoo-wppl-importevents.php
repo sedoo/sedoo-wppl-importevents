@@ -37,8 +37,8 @@ function sedoo_wppl_importevents_page_affichage() {
 <?php 
 
         $evenements_em = get_posts([
-            'post_type' => 'event',
-            'post_status' => 'publish',
+            'post_type' => 'event',    
+            'post_status' => array('publish', 'pending', 'draft', 'auto-draft', 'future', 'private', 'inherit', 'trash'),  
             'numberposts' => -1
             // 'order'    => 'ASC'
         ]);
