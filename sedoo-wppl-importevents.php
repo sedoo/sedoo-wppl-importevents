@@ -3,8 +3,10 @@
  * Plugin Name: Sedoo - Importation d'événements
  * Plugin URI: http://www.mywebsite.com/my-first-plugin
  * Description: Permet d'importer les événements de Events Manager vers The Events Calendar.
- * Version: 1.0
- * Author: Nicolas Gruwe
+ * Version: 0.1.0
+ * Author: Nicolas Gruwe 
+ * GitHub Plugin URI: sedoo/sedoo-wppl-blocks
+ * GitHub Branch:     master
  */
 
 $style_url = plugin_dir_url( __FILE__ ).'css/main.css';
@@ -37,7 +39,7 @@ function sedoo_wppl_importevents_page_affichage() {
 <?php 
 
         $evenements_em = get_posts([
-            'post_type' => 'event',    
+            'post_type' => 'event',
             'post_status' => array('publish', 'pending', 'draft', 'auto-draft', 'future', 'private', 'inherit', 'trash'),  
             'numberposts' => -1
             // 'order'    => 'ASC'
